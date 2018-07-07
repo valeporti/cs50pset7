@@ -5,9 +5,9 @@
     <head>
 
         <!-- http://getbootstrap.com/ -->
-        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/public/css/bootstrap.min.css" rel="stylesheet"/>
 
-        <link href="/css/styles.css" rel="stylesheet"/>
+        <link href="/public/css/styles.css" rel="stylesheet"/>
 
         <?php if (isset($title)): ?>
             <title>C$50 Finance: <?= htmlspecialchars($title) ?></title>
@@ -16,12 +16,12 @@
         <?php endif ?>
 
         <!-- https://jquery.com/ -->
-        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/public/js/jquery-1.11.3.min.js"></script>
 
         <!-- http://getbootstrap.com/ -->
-        <script src="/js/bootstrap.min.js"></script>
+        <script src="/public/js/bootstrap.min.js"></script>
 
-        <script src="/js/scripts.js"></script>
+        <script src="/public/js/scripts.js"></script>
 
     </head>
 
@@ -35,12 +35,12 @@
                 </div>
                 <?php if (!empty($_SESSION["id"])): ?>
                     <ul class="nav nav-pills">
-                        <li><a href="quote.php">Quote</a></li>
-                        <li><a href="buy.php">Buy</a></li>
-                        <li><a href="sell.php">Sell</a></li>
-                        <li><a href="history.php">History</a></li>
-                        <li><a href="profile.php">Profile</a></li>
-                        <li><a href="logout.php"><strong>Log Out</strong></a></li>
+                        <li><a href="/public/quote.php">Quote</a></li>
+                        <li><a href="/public/buy.php">Buy</a></li>
+                        <li><a href="/public/sell.php">Sell</a></li>
+                        <li><a href="/public/history.php">History</a></li>
+                        <li><a href="/public/profile.php">Profile</a></li>
+                        <li><a href="/public/logout.php"><strong>Log Out</strong></a></li>
                     </ul>
                 <?php endif ?>
             </div>
