@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "post-install-cmd": [
+            "chmod -R 777 public/"
+        ]
+    },
+    "require": {
+        "ext-bcmath": "*",
+        "ext-gmp": "*",
+        "ext-curl": "*",
+        "ext-dom": "*"
+    }
+}
